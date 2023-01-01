@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+   
+
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);;
+
+
+
+--Verydarkblue_main_BG: hsl(217, 54%, 11%);
+--Verydarkblue_card_BG: hsl(216, 50%, 16%);
+--Verydarkblue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+}
+body{
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(217, 54%, 11%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.continer{
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: 'Outfit' ,sans-serif;
+    box-shadow: 0px 30px 15px 30px hsla(211, 51%, 9%, 0.753);
+    
+
+}
+
+.mainimg{
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mainimg img{
+    display: block;
+    width: 100%;
+}
+.over-lay{
+    background-color: hsla(178, 100%, 50% ,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.mainimg:hover .over-lay{
+    display: block;
+    cursor: pointer;
+}
+
+.over-lay img{
+    position: absolute;
+    
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h2{
+    color: white;
+    font-weight: 600;
+     
+}
+
+h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+
+p{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.eth{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 13p4;
+}   
+
+.ethereum{
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    
+}
+
+.ethereum img{
+    padding-right: 5px;
+}
+
+hr{
+    border: 1px solid  hsl(215, 32%, 27%);
+    width: 100%;
+}
+
+.dp{
+    width: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+.username{
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.name{
+    color: #fff;
+    padding-left: 10px;
+}
+
+:hover.name{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
